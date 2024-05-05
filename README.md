@@ -27,8 +27,3 @@ Before you begin, ensure you have met the following requirements:
   "akamai_hash": "a345a694846ad9f6c97bcc3c75adbe26",
   "akamai_text": "1:65536;2:0;3:1000;4:6291456;6:262144|15663105|0|m,a,s,p"
 }
-
-
-
-
-
