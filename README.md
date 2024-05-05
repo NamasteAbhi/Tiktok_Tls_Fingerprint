@@ -18,7 +18,8 @@ Before you begin, ensure you have met the following requirements:
 
 ## Tls FingerPrint Of Tiktok
 
-```{
+```
+{
   "user_agent":"com.zhiliaoapp.musically/2023405050 (Linux; U; Android 10; en_IN; 211033MI; Build/QP1A.190711.020; Cronet/TTNetVersion:a1086d5d 2024-03-21 QuicVersion:68c84b0f 2024-02-29)",
   "ja3_hash": "cd08e31494f9531f560d64c695473da9",
   "ja3_text": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27-17513-21,29-23-24,0",
@@ -27,6 +28,7 @@ Before you begin, ensure you have met the following requirements:
   "akamai_hash": "a345a694846ad9f6c97bcc3c75adbe26",
   "akamai_text": "1:65536;2:0;3:1000;4:6291456;6:262144|15663105|0|m,a,s,p"
 }
+```
 
 ## Websites For Test Tls Fingerprint
 
