@@ -33,4 +33,5 @@ Before you begin, ensure you have met the following requirements:
 ## Websites For Test Tls Fingerprint
 
 - **BrowserLeaks TLS Test**: Returns detailed information about your TLS connection.
-  - URL: [https://tls.browserleaks.com/json](https://tls.browserleaks.com/json)
+  - URL: [https://tls.browserleaks.com/json]
+  - URL2: [https://tls.browserleaks.com/json]
