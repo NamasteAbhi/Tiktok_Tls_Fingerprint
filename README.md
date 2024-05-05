@@ -1,6 +1,6 @@
 # Note
 
-When You Use This Js Script For Hook Tls Fingerprint You Need To Clear Your App Data For Get Tls Fingerprint
+When You Use This Js Script For Hook Tls Fingerprint You Need To Clear Your App Data Before Start
 
 # TikTok TLS Fingerprint Hook
 
