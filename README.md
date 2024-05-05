@@ -14,7 +14,7 @@ This repository contains a Frida script designed for hooking the TLS fingerprint
 
 Before you begin, ensure you have met the following requirements:
 - **Frida**: This tool must be installed on your system. Frida is a dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. [Learn more about installing Frida here](https://frida.re/docs/installation/).
-- **TikTok APK**: Download the TikTok version 34.5.5 from APKMirror: [Download TikTok 34.5.5](https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/tik-tok-including-musical-ly-34-5-5-release/).
+- **TikTok APK**: Download the TikTok version 34.5.5 from APKMirror: [Download TikTok 34.5.5](https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/tik-tok-including-musical-ly-34-5-5-release/tiktok-34-5-5-2-android-apk-download/).
 
 ## Tls FingerPrint Of Tiktok
 
