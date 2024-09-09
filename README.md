@@ -35,3 +35,6 @@ Before you begin, ensure you have met the following requirements:
 - **BrowserLeaks TLS Test**: Returns detailed information about your TLS connection.
   - URL: [https://tls.browserleaks.com/json]
   - URL2: [https://tls.peet.ws/api/all]
+ 
+# Disclaimer
+This project is provided only for educational purposes. It should not be used for illegal activities or to compromise any systems. The author assumes no responsibility for any misuse of this code.
