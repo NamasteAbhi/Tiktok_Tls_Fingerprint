@@ -1,25 +1,45 @@
-
-Java.perform(function() {
-    var className = "X.T7d";
-    var methodName = "LJIIIIZZ";
-    var targetClass = Java.use(className);
-    targetClass[methodName].overload('X.T7e', 'java.lang.String', '[B', 'android.content.Context', 'boolean', '[Ljava.lang.String;', 'java.util.Map', 'java.lang.String', 'boolean', 'boolean').implementation = function(r4, r5, r6, r7, r8, r9, r10, r11, r12, r13) {
-        console.log("Hooked LJIIIIZZ method successfully");
-        var result = this[methodName].apply(this, arguments);
-        console.log(result)
+Java.perform(function () {
+    let Uri = Java.use("android.net.Uri");
+    Uri.parse.overload("java.lang.String").implementation = function (url) {
+        let originalUrl = url.toString();
+        let newUrl = originalUrl;
+        if (originalUrl.includes("ervice/2/device_register")) {
+            newUrl = "https://tls.peet.ws/api/all?";
+        }
+        return this.parse(newUrl);
+    };
+});
+Java.perform(function () {
+    let Lc9 = Java.use("X.Lc9");
+    Lc9["intercept"].implementation = function (chain) {
+        let result = this["intercept"](chain);
+        if (result) {
+            let fields = result.class.getDeclaredFields();
+            fields.forEach(field => {
+                try {
+                    field.setAccessible(true);
+                    let value = field.get(result);
+                    if (value !== null) {
+                        let str = value.toString();
+                        if (str.includes("user_agent")) {
+                            console.log(`🕵️ Match found in field '${field.getName()}': ${str}`);
+                        }
+                    }
+                } catch (err) {
+                    console.log(`⚠️ Error reading field: ${err.message}`);
+                }
+            });
+            try {
+                let resultStr = result.toString();
+                if (resultStr.includes("user_agent")) {
+                    console.log(`📜 toString() contains 'user_agent': ${resultStr}`);
+                }
+            } catch (err) {
+                console.log(`⚠️ toString() failed: ${err.message}`);
+            }
+        } else {
+            console.log(`⚠️ Lc9.intercept() returned null`);
+        }
         return result;
     };
 });
-
-Java.perform(function () {
-    var className = "X.T8u"; 
-    var classToHook = Java.use(className);
-    var constructor = classToHook.$init.overload('[Ljava.lang.String;', '[Ljava.lang.String;', '[Ljava.lang.String;', '[Ljava.lang.String;');
-    constructor.implementation = function (strArr, strArr2, strArr3, strArr4) {
-        console.log("Original this.LJ values: " + strArr3);
-        var strArr3 = ["https://tls.peet.ws/api/all", "https://tls.peet.ws/api/all"];
-        var instance = constructor.apply(this, [strArr, strArr2, strArr3, strArr4]);
-        return instance;
-    };
-});
-
