@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 
 ```
 {
-  "user_agent":"com.zhiliaoapp.musically/2023405050 (Linux; U; Android 10; en_IN; 211033MI; Build/QP1A.190711.020; Cronet/TTNetVersion:a1086d5d 2024-03-21 QuicVersion:68c84b0f 2024-02-29)",
+  "user_agent":"com.zhiliaoapp.musically/2023904000 (Linux; U; Android 13; en_GB; M2103K19I; Build/TP1A.220624.014; Cronet/TTNetVersion:26c4b559 2025-03-06 QuicVersion:55af8b7a 2024-11-18)",
   "ja3_hash": "cd08e31494f9531f560d64c695473da9",
   "ja3_text": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,0-23-65281-10-11-35-16-5-13-18-51-45-43-27-17513-21,29-23-24,0",
   "ja3n_hash": "aa56c057ad164ec4fdcb7a5a283be9fc",
