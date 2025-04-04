@@ -3,7 +3,7 @@ Java.perform(function () {
     Uri.parse.overload("java.lang.String").implementation = function (url) {
         let originalUrl = url.toString();
         let newUrl = originalUrl;
-        if (originalUrl.includes("ervice/2/device_register")) {
+        if (originalUrl.includes("service/2/device_register")) {
             newUrl = "https://tls.peet.ws/api/all?";
         }
         return this.parse(newUrl);
